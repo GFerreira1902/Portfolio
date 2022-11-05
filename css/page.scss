@@ -129,12 +129,13 @@ header {
     vertical-align: middle;
 }
 .homebutton {
-    border-color: #3498db;
-    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 #3498db;
+    border-color: rgb(20, 85, 184);
+    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 rgb(20, 85, 184);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
     visibility: visible;
   }
+
 .homebutton:hover {
     box-shadow: 0 0 10px 0 black inset, 0 0 10px 4px rgb(20, 85, 184);
 }
@@ -178,17 +179,124 @@ header {
 
 .BackgroundAbout{
     width: 100%;
-    height: 1000px;
-    text-align: center;
-    padding: 40px 4%;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10%;
     font-family: roboto;
     color: black;
+    text-align: center;
 
     background: url(../imgs/backgroundabout.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
+}
+
+.abouttext{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    padding-bottom: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5%;
+}
+
+.aboutskills{
+    float: right;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5%;
+}
+
+.me{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(20, 85, 184);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.skills{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.curriculum {
+    padding: 0.7em 1.3em;
+    cursor: pointer;
+    background: linear-gradient(90deg, black 0%, #2d3030 100%);
+    text-decoration: none;
+    font-weight:bold;
+    font-size:1.1em; 
+    color: #fff;
+    border-radius:10px;
+    overflow:hidden; 
+    transition:0.3s; 
+    margin-top: 10%;
+    bottom: 0;
+}
+.curriculum:hover { transition:0.3s; }
+
+.background-bounce-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.background-bounce-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(20, 85, 184);
+  border-radius:5px; 
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.background-bounce-right:hover, .background-bounce-right:focus, .background-bounce-right:active {
+  
+  color:black;
+
+}
+
+.background-bounce-right:hover:before, .background-bounce-right:focus:before, .background-bounce-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
 
