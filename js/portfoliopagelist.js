@@ -4,7 +4,7 @@ function CopiarEmail(){
     
 
     Swal.fire({
-        background: '#000',
+        background: 'rgb(128,128,128)',
         color: 'white',
         icon: 'info',
         title: 'Copie Meu Email Para Entrar Em Contato !!',
@@ -17,12 +17,13 @@ function CopiarEmail(){
             readonly>`,
         showCancelButton: true,
         cancelButtonText: 'Fechar',
+        cancelButtonColor: 'black',
         confirmButtonText: 'Sim, Copiar!!',
         showClass: {
-            popup: 'animate__animated animate__fadeInDown'
+            popup: 'animate__animated animate__rollIn'
         },
         hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
+            popup: 'animate__animated animate__rollOut'
         }
         
     }).then((result) => {
@@ -37,7 +38,7 @@ function CopiarEmail(){
                 
                 icon : 'success',
                 title: 'Email Copiado Com Sucesso !!',
-                background: '#000',
+                background: 'rgb(128,128,128)',
                 color: 'white',
             }
           )
@@ -45,3 +46,5 @@ function CopiarEmail(){
     }})
 
 }
+
+
