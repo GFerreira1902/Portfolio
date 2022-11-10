@@ -208,10 +208,18 @@ header {
     transform: 0.3s;background: linear-gradient(45deg, rgb(20,85,184), #2d3030);
 }
 
+.card-img-top{
+    height: 200px;
+}
+
 .btnmodal{
     background: linear-gradient(90deg, black 0%, #2d3030 100%);
     overflow:hidden; 
     bottom: 0;
+}
+
+.modal-style{
+    background: linear-gradient(160deg, #2d3030 0%, #8f9494 100%);
 }
 
 .BackgroundAbout{

@@ -3,7 +3,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
     if ($(this).scrollTop() > 200) { // distancia que tem que rolar antes de aparecer
         $('.btntop').fadeIn(250);
-        '.btntop'.style.display = 'flex';
     } 
     
     else {
